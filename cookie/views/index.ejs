@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<!--
+<script  type="application/json" src="http://cookie.com/info"></script>
+-->
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<h3>This is cookie 2</h3>
+
+<script>
+  $.ajax({
+    url: "http://cookie.com/info",
+    // jsonp: "callback",
+    dataType: "jsonp",
+    success: function(response) {
+      console.log(response);
+    }
+  });
+</script>
